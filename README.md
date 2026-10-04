@@ -2,7 +2,7 @@
 
 SovaV2 is the successor to [Sova V1](https://github.com/djeZo888/mixed-memory-llm-api-server), a locally hosted agentic system for technical research and engineering work.
 
-**Status: initialization and milestone planning. Implementation has not begun.** V1 ended before delivering the requested complete system. V2 will start from a reviewed architecture, clear configuration and communication contracts, and tests for small independently working components. Reuse is assessed component by component.
+**Status: M1–M5 planning on the `plan` branch. Implementation has not begun.** V1 ended before delivering the requested complete system. V2 starts with an entity proposal, followed by detailed architecture, configuration and communication contracts, and a test plan for independently working components. Reuse is assessed component by component.
 
 ## V2 requirements
 
@@ -13,7 +13,12 @@ SovaV2 is the successor to [Sova V1](https://github.com/djeZo888/mixed-memory-ll
 - Make text, recognition and generation independently usable and recoverable, with shared-resource restrictions only where a real conflict exists.
 - Keep personal information, credentials, access inventories, private histories and deployment-specific details outside this repository.
 
-The ordered work and completion gates are in [Milestones](docs/MILESTONES.md). This is the current planning index; historical V1 inputs are evidence for review, not current deployment instructions.
+## Current planning index
+
+- [Proposed subsystem entities and their connections](docs/planning/ENTITIES.md): responsibilities, state ownership, communication tables and diagrams. This is the first architecture proposal for discussion.
+- [Milestones](docs/MILESTONES.md): ordered work and completion gates. M1–M5 are documentation and GitHub planning only; M6 begins implementation.
+
+Planning work is integrated into `plan` without a separate user PR-review gate. The entity proposal is presented before expanding the complete component plan. Historical V1 inputs are evidence for review, not current deployment instructions.
 
 ## Design inputs
 
@@ -23,4 +28,4 @@ The ordered work and completion gates are in [Milestones](docs/MILESTONES.md). T
 - [Reuse inventory](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/9481c1fda160b03d414a05c6ae741c34d2bb4dcf/docs/REUSE-INVENTORY.md), [V2 design input](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/9481c1fda160b03d414a05c6ae741c34d2bb4dcf/docs/V2-DESIGN-INPUT.md) and [backlog](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/9481c1fda160b03d414a05c6ae741c34d2bb4dcf/TODO.md).
 - [CodexTandem](https://github.com/djeZo888/CodexTandem): development coordination across an orchestrator and separate physical workers.
 
-Detailed planning comes first, followed by independent component implementation and tests, inter-module integration and tests, then full-system implementation and acceptance. The architecture and implementation plan require user review before rebuild execution. Historical V1 test results do not establish V2 acceptance.
+Detailed planning comes first, followed by independent component implementation and tests, inter-module integration and tests, then full-system implementation and acceptance. Publishing planning documents does not authorize runtime implementation or deployment. Historical V1 test results do not establish V2 acceptance.

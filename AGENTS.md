@@ -2,7 +2,9 @@
 
 Read README.md and docs/MILESTONES.md first. They are the current scope and planning index. V1 documents are historical design inputs; assess reuse and licensing before importing code. Current user instructions take precedence.
 
-The current task is initialization and a milestone list. Do not begin detailed implementation or deployment from this task. The complete component plan is reviewed before rebuild execution.
+The current phase is M1–M5 planning on the `plan` branch. These milestones produce documentation and GitHub planning records only, including the design of future tests and runners. Do not implement product components or deploy services during this phase. Propose the entity list and connections first, then expand the detailed component plan following user direction.
+
+The user authorizes the orchestrator to merge reviewed work into the appropriate branch without waiting for user PR review. Integrate planning work into `plan`. Perform the relevant content, privacy and attribution checks before every push. Keep architecture proposals and unresolved design choices explicit; publication does not mean the user has accepted a design.
 
 Preserve single-user operation in one ordinary headless Linux user instance. Keep models and runtimes administrator-configurable through validated capability contracts. Do not hard-code a particular deployment host, accelerator or model into the product.
 

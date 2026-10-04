@@ -1,6 +1,6 @@
 # SovaV2 milestones
 
-Status: milestone list established; detailed component planning and implementation are pending.
+Status: planning branch `plan` established; the [initial entity proposal](planning/ENTITIES.md) is published for discussion. Detailed M1–M5 planning remains incomplete; implementation has not begun.
 
 The delivery order is detailed planning, independently working components, inter-module integration, and complete-system qualification. Completion depends on the stated behavior and evidence, not the quantity of code or passing fixtures. No dates or execution timeboxes are imposed by this list.
 
@@ -12,6 +12,8 @@ The delivery order is detailed planning, independently working components, inter
 
 ## Detailed planning
 
+M1–M5 are pure planning: design documents and GitHub planning records. M5 defines the future tests and execution system; it does not implement a runner. Work is integrated into `plan` without waiting for user PR review. The first deliverable is the entity list and basic connection map, before the complete plan is expanded.
+
 | ID | Milestone | Completion gate |
 | --- | --- | --- |
 | M1 | Requirements and release scope | Agree first-release user workflows and measurable acceptance; preserve single-user, single-instance headless Linux operation and administrator-managed open-source models. Decide required modalities, tools and supported context targets; identify deferred extensions. |
@@ -20,7 +22,7 @@ The delivery order is detailed planning, independently working components, inter
 | M4 | Communication, persistence and tool contracts | Define versioned requests, events, identifiers, errors, authentication, authorization and artifact access. Specify idempotency, durable run states, reconnect cursors, restart reconciliation, deadlines, retries, cancellation and confirmed settlement. Separate native turn termination from user task fulfillment. |
 | M5 | Test catalogue and development workflow | Map each requirement to unit/contract, direct-component, real-model, integration and full-workflow checks. Define reproducible runners, fixtures, expected results, evidence levels, failure cases, resource bounds and cleanup. Establish worker ownership and submission/review rules without exposing infrastructure. |
 
-Review the complete M1–M5 plan before rebuild execution. Planning must explain how every component can be tested directly and how the components will fit together.
+Complete M1–M5 before rebuild execution. Planning must explain how every component can be tested directly and how the components fit together. Publication of a proposal is distinct from acceptance of its design; implementation requires the next project instruction.
 
 ## Individual component implementation and testing
 

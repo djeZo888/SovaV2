@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img" aria-labelledby="title desc">
+<title id="title">SovaV2 proposed logical entity map</title>
+<desc id="desc">Nineteen core entities grouped into clients, API, system foundations, execution and data, and models. Speech recognition and synthesis are optional. Internal modules can share one application process in a single ordinary Linux user instance.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#61738a" stroke-width="1.5"/></marker></defs>
+<rect width="1440" height="1120" fill="#f7f9fc"/>
+<text x="34" y="51" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#172c45">SovaV2</text>
+<text x="190" y="51" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" fill="#172c45">Proposed subsystem entities</text>
+<text x="34" y="85" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#56687e">Initial architecture proposal • responsibilities and connections before detailed component planning</text>
+<text x="262" y="126" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#64748b">User and operator clients</text>
+<rect x="260" y="145" width="365" height="66" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="272" y="157" width="46" height="42" rx="8" fill="#397ca0" stroke="#397ca0" stroke-width="1.5"/>
+<text x="279" y="184.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E18</text>
+<text x="332" y="184.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Chat Interface</text>
+<rect x="820" y="145" width="365" height="66" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="832" y="157" width="46" height="42" rx="8" fill="#397ca0" stroke="#397ca0" stroke-width="1.5"/>
+<text x="839" y="184.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E19</text>
+<text x="892" y="184.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Operator Interface</text>
+<path d="M443 212 V240 H694 V306" fill="none" stroke="#61738a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M1003 212 V240 H754 V306" fill="none" stroke="#61738a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="527" y="233" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#56687e">HTTP / JSON • SSE • artifact bytes</text>
+<rect x="24" y="269" width="1392" height="782" rx="20" fill="#eef3f9" stroke="#cbd7e6" stroke-width="1.5"/>
+<text x="48" y="301" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c45">One ordinary headless Linux user instance</text>
+<rect x="568" y="323" width="315" height="60" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="580" y="335" width="46" height="36" rx="8" fill="#397ca0" stroke="#397ca0" stroke-width="1.5"/>
+<text x="587" y="359.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E17</text>
+<text x="640" y="359.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">API Gateway</text>
+<path d="M725 383 V414" fill="none" stroke="#61738a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="882" y="361" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#56687e">Authorized calls to the owning module</text>
+<rect x="48" y="419" width="365" height="425" rx="16" fill="#ffffff" stroke="#d9e1eb" stroke-width="1.5"/>
+<text x="66" y="453" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#315e9d">System foundations</text>
+<rect x="62" y="474" width="337" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="74" y="486" width="46" height="25" rx="8" fill="#315e9d" stroke="#315e9d" stroke-width="1.5"/>
+<text x="81" y="504.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E01</text>
+<text x="134" y="504.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Central Configuration</text>
+<rect x="62" y="542" width="337" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="74" y="554" width="46" height="25" rx="8" fill="#315e9d" stroke="#315e9d" stroke-width="1.5"/>
+<text x="81" y="572.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E02</text>
+<text x="134" y="572.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Security and Secrets</text>
+<rect x="62" y="610" width="337" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="74" y="622" width="46" height="25" rx="8" fill="#315e9d" stroke="#315e9d" stroke-width="1.5"/>
+<text x="81" y="640.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E03</text>
+<text x="134" y="640.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">System Handler</text>
+<rect x="62" y="678" width="337" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="74" y="690" width="46" height="25" rx="8" fill="#315e9d" stroke="#315e9d" stroke-width="1.5"/>
+<text x="81" y="708.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E04</text>
+<text x="134" y="708.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">System Status</text>
+<rect x="62" y="746" width="337" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="74" y="758" width="46" height="25" rx="8" fill="#315e9d" stroke="#315e9d" stroke-width="1.5"/>
+<text x="81" y="776.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E05</text>
+<text x="134" y="776.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Backups and Restore</text>
+<rect x="437" y="419" width="450" height="425" rx="16" fill="#ffffff" stroke="#d9e1eb" stroke-width="1.5"/>
+<text x="455" y="453" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#6855a3">Work execution and data</text>
+<rect x="451" y="474" width="422" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="463" y="486" width="46" height="25" rx="8" fill="#6855a3" stroke="#6855a3" stroke-width="1.5"/>
+<text x="470" y="504.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E06</text>
+<text x="523" y="504.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Run Handler</text>
+<rect x="451" y="542" width="422" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="463" y="554" width="46" height="25" rx="8" fill="#6855a3" stroke="#6855a3" stroke-width="1.5"/>
+<text x="470" y="572.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E09</text>
+<text x="523" y="572.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Codex Engine Adapter</text>
+<rect x="451" y="610" width="422" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="463" y="622" width="46" height="25" rx="8" fill="#6855a3" stroke="#6855a3" stroke-width="1.5"/>
+<text x="470" y="640.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E14</text>
+<text x="523" y="640.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Tool Gateway</text>
+<rect x="451" y="678" width="422" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="463" y="690" width="46" height="25" rx="8" fill="#6855a3" stroke="#6855a3" stroke-width="1.5"/>
+<text x="470" y="708.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E07</text>
+<text x="523" y="708.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Conversations and Memory</text>
+<rect x="451" y="746" width="422" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="463" y="758" width="46" height="25" rx="8" fill="#6855a3" stroke="#6855a3" stroke-width="1.5"/>
+<text x="470" y="776.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E08</text>
+<text x="523" y="776.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Artifact Store</text>
+<rect x="911" y="419" width="481" height="425" rx="16" fill="#ffffff" stroke="#d9e1eb" stroke-width="1.5"/>
+<text x="929" y="453" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#9a6832">Models and capabilities</text>
+<rect x="925" y="474" width="453" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="937" y="486" width="46" height="25" rx="8" fill="#9a6832" stroke="#9a6832" stroke-width="1.5"/>
+<text x="944" y="504.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E10</text>
+<text x="997" y="504.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Model Catalog</text>
+<rect x="925" y="532" width="453" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="937" y="544" width="46" height="25" rx="8" fill="#9a6832" stroke="#9a6832" stroke-width="1.5"/>
+<text x="944" y="562.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E11</text>
+<text x="997" y="562.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Model Runtime Manager</text>
+<rect x="925" y="590" width="453" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="937" y="602" width="46" height="25" rx="8" fill="#9a6832" stroke="#9a6832" stroke-width="1.5"/>
+<text x="944" y="620.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E12</text>
+<text x="997" y="620.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Routing / Resource Admission</text>
+<rect x="925" y="648" width="453" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="937" y="660" width="46" height="25" rx="8" fill="#9a6832" stroke="#9a6832" stroke-width="1.5"/>
+<text x="944" y="678.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E13</text>
+<text x="997" y="678.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Model Gateway</text>
+<rect x="925" y="706" width="453" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="937" y="718" width="46" height="25" rx="8" fill="#9a6832" stroke="#9a6832" stroke-width="1.5"/>
+<text x="944" y="736.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E15</text>
+<text x="997" y="736.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Recognition / Parsing</text>
+<rect x="925" y="764" width="453" height="49" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="937" y="776" width="46" height="25" rx="8" fill="#9a6832" stroke="#9a6832" stroke-width="1.5"/>
+<text x="944" y="794.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E16</text>
+<text x="997" y="794.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Generation / Editing</text>
+<text x="51" y="880" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#56687e">Modules may share one application process; Codex and configured model backends use managed processes as needed.</text>
+<rect x="48" y="906" width="1344" height="110" rx="14" fill="#f8fafc" stroke="#bdc9d8" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="66" y="933" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#64748b">Optional capabilities — first-release scope remains an M1 decision</text>
+<rect x="66" y="949" width="570" height="50" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="78" y="961" width="46" height="26" rx="8" fill="#7d8c9c" stroke="#7d8c9c" stroke-width="1.5"/>
+<text x="85" y="980.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E20</text>
+<text x="138" y="980.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Speech Recognition</text>
+<rect x="661" y="949" width="709" height="50" rx="14" fill="#fff" stroke="#d9e1eb" stroke-width="1.5"/>
+<rect x="673" y="961" width="46" height="26" rx="8" fill="#7d8c9c" stroke="#7d8c9c" stroke-width="1.5"/>
+<text x="680" y="980.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#fff">E21</text>
+<text x="733" y="980.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#172c45">Speech Synthesis</text>
+<text x="35" y="1082" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#56687e">The detailed communication table and diagrams distinguish lifecycle control, native Codex RPC and model inference traffic.</text>
+</svg>
