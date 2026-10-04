@@ -6,10 +6,10 @@ SovaV2 is the successor to [Sova V1](https://github.com/djeZo888/mixed-memory-ll
 
 ## Design inputs
 
-- [V1 closeout review](https://github.com/djeZo888/mixed-memory-llm-api-server/pull/12), pending user approval.
-- [User vision](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/a1c5395046413a1876803e1df423e82d0388074e/docs/VISION.md).
-- [Candid V1 postmortem](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/a1c5395046413a1876803e1df423e82d0388074e/docs/POSTMORTEM.md).
-- [Reuse inventory](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/a1c5395046413a1876803e1df423e82d0388074e/docs/REUSE-INVENTORY.md), [V2 design input](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/a1c5395046413a1876803e1df423e82d0388074e/docs/V2-DESIGN-INPUT.md) and [backlog](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/a1c5395046413a1876803e1df423e82d0388074e/TODO.md).
+- [Final V1 documentation](https://github.com/djeZo888/mixed-memory-llm-api-server/tree/main), merged into the default branch on 4 October 2026 ([PR #12](https://github.com/djeZo888/mixed-memory-llm-api-server/pull/12)).
+- [User vision](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/9481c1fda160b03d414a05c6ae741c34d2bb4dcf/docs/VISION.md).
+- [Candid V1 postmortem](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/9481c1fda160b03d414a05c6ae741c34d2bb4dcf/docs/POSTMORTEM.md).
+- [Reuse inventory](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/9481c1fda160b03d414a05c6ae741c34d2bb4dcf/docs/REUSE-INVENTORY.md), [V2 design input](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/9481c1fda160b03d414a05c6ae741c34d2bb4dcf/docs/V2-DESIGN-INPUT.md) and [backlog](https://github.com/djeZo888/mixed-memory-llm-api-server/blob/9481c1fda160b03d414a05c6ae741c34d2bb4dcf/TODO.md).
 - [CodexTandem](https://github.com/djeZo888/CodexTandem): development coordination across an orchestrator and separate physical workers.
 
 ## Foundation work
